@@ -35,7 +35,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={scrolling && styles.notTop}>
+    <nav className={scrolling ? styles.notTop : ''}>
       <div className={styles.innerContainer}>
         <div className={styles.logo} onClick={() => navigate('/')}>
           <img src={Logo} alt="logo" />
