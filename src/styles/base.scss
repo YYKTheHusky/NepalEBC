@@ -1,0 +1,57 @@
+//import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --dark-100: #171725;
+  --dark-90: #44444f;
+  --dark-80: #696974;
+  --dark-70: #92929d;
+  --dark-60: #b5b5be;
+  --dark-50: #d5d5dc;
+  --dark-40: #e2e2ea;
+  --dark-30: #f1f1f5;
+  --dark-20: #fafafb;
+  --dark-0: #ffffff;
+
+  --base-font-size: 20px;
+  --secondary-font-size: 16px;
+  --small-font-size: 14px;
+
+  --main-font-family: 'Noto Sans Display', sans-serif;
+}
+
+body {
+  --background-color: #ffffff;
+  --main-color: #ebb428;
+  --primary-color: #e6c162;
+  --secondary-color: #6c757d;
+  --success-color: #3dd598;
+  --warning: #ffc542;
+  --danger: #fc5a5a;
+
+  --main-text: #44444f;
+
+  background-color: var(--background-color);
+  color: var(--main-text);
+  font-family: var(--main-font-family);
+  font-size: var(--base-font-size);
+  user-select: none;
+  line-height: 28px;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #acacac;
+  }
+}
