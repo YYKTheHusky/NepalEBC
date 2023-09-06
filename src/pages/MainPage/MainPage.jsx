@@ -53,13 +53,13 @@ export default function MainPage() {
               width="500"
               height="280"
               src="https://www.youtube.com/embed/f8SdIjPcVao?si=LxrDklJtK3TQ8ZA8"
-              allowfullscreen
+              allowFullScreen
             />
             <iframe
               width="500"
               height="280"
               src="https://www.youtube.com/embed/EoJPNiRBKsk?si=UOAnCMRMSy9RIHN9"
-              allowfullscreen
+              allowFullScreen
             />
           </div>
         </section>

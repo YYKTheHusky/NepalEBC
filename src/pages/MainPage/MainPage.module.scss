@@ -19,7 +19,7 @@
     justify-content: center;
     color: white;
     font-weight: 700;
-    animation: slideUp 1s ease-in-out forwards;
+    animation: slideUp 1.5s ease-in-out forwards;
     opacity: 0;
   }
   .title {
@@ -55,7 +55,6 @@
   .introduction {
     width: 70%;
     margin: 120px auto;
-    animation: slideUp 1s ease-in-out forwards;
   }
 }
 
