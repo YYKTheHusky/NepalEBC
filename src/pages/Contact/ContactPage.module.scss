@@ -1,0 +1,100 @@
+.container {
+  background-color: var(--dark-30);
+  width: 100%;
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.infoContainer {
+  width: 100%;
+  position: absolute;
+  top: 180px;
+  display: flex;
+  .innerContainer {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .welcomeWords {
+    font-size: 24px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    width: 216px;
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 1.3s steps(9, end),
+      blink-caret 0.5s step-end infinite alternate;
+  }
+  .item {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease 1.5s forwards;
+    .email {
+      width: 32px;
+      height: 32px;
+      margin-left: 4px;
+      margin-right: 8px;
+      &:hover {
+        animation: shake 1s ease infinite;
+      }
+    }
+    .youtube {
+      width: 40px;
+      height: 40px;
+      margin-right: 6px;
+      &:hover {
+        animation: shake 0.8s ease infinite;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: var(--dark-90);
+      user-select: text;
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
