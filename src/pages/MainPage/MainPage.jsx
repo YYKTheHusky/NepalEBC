@@ -34,7 +34,7 @@ export default function MainPage() {
       <div className={styles.contentContainer}>
         <section className={styles.introduction}>
           <p>
-            2022年底，我獨自前往尼泊爾EBC，途中生了一場大病，發燒了6天，接近吃光了所有攜帶的藥物，最後走到Gorrak
+            &emsp;&emsp;2022年底，我獨自前往尼泊爾EBC，展開為期11天的徒步之旅。途中生了一場大病，發燒了6天，接近吃光了所有攜帶的藥物，最後走到Gorrak
             Shep，看到了人生第一個冰河。回頭檢視這整趟旅程，發現當地旅行社的醫療知識及設備的不足，想將這次的經驗寫成文章，希望未來準備前往朝聖的旅人們，可以擁有更充足的資訊及準備。
           </p>
         </section>

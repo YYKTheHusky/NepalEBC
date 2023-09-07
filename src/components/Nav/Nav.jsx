@@ -6,7 +6,7 @@ import styles from 'components/Nav/Nav.module.scss'
 // svg
 import Logo from 'assets/icons/Logo.svg'
 
-export default function Nav() {
+export default function Nav({ dark }) {
   const navigate = useNavigate()
   const [scrolling, setScrolling] = useState(false)
 
@@ -14,8 +14,8 @@ export default function Nav() {
   const navItems = [
     { text: '關於本站', path: '/about' },
     { text: '攻略文章', path: '/article' },
-    { text: '影片', path: '/contact' },
-    { text: '聯絡我', path: '/video' }
+    { text: '影片', path: '/video' },
+    { text: '聯絡我', path: '/contact' }
   ]
 
   // 下滑時nav改為不透明，至頂時為透明背景
@@ -35,7 +35,11 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={scrolling ? styles.notTop : ''}>
+    <nav
+      className={`${scrolling ? styles.notTop : ''} ${
+        dark ? styles.dark : styles.white
+      }`}
+    >
       <div className={styles.innerContainer}>
         <div className={styles.logo} onClick={() => navigate('/')}>
           <img src={Logo} alt="logo" />

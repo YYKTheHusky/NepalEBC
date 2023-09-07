@@ -11,6 +11,14 @@ nav {
   color: white;
 }
 
+.white {
+  color: white;
+}
+
+.dark {
+  color: var(--dark-90);
+}
+
 .innerContainer {
   width: 100%;
   max-width: 1140px;
@@ -41,6 +49,7 @@ nav {
 }
 
 .notTop {
+  color: white;
   background-color: var(--dark-90);
   height: 60px;
   transition:
