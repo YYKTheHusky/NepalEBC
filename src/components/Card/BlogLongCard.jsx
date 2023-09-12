@@ -8,6 +8,7 @@ export default function BlogLongCard({ data }) {
     <div
       className={styles.cardContainer}
       onClick={() => navigate(`/article/${data.id}`)}
+      data-aos="zoom-in-right"
     >
       <div className={styles.photoContainer}>
         <img src={data.photo} />
