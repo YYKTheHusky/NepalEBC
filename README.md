@@ -5,5 +5,5 @@
 
 ## 畫面截圖
 
-![](./public/screen-shot-001.jpg)
-![](./public/screen-shot-002.jpg)
+![](./public/screen-shot-001.png)
+![](./public/screen-shot-002.png)
