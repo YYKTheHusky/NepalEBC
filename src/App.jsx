@@ -8,11 +8,15 @@ import ContactPage from 'pages/Contact/ContactPage'
 import ArticlePage from 'pages/Article/ArticlePage'
 import AboutPage from 'pages/About/AboutPage'
 import SingleArticlePage from 'pages/SingleArticle/SingleArticlePage'
+import ScrollToTopOnNavigate from 'components/ScrollToTop'
+
+const basename = process.env.PUBLIC_URL
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
+        <ScrollToTopOnNavigate />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="about" element={<AboutPage />} />
