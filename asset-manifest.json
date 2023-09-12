@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/NienNienKo-nepal-EBC/static/css/main.6011ea0a.css",
+    "main.js": "/NienNienKo-nepal-EBC/static/js/main.0eda1598.js",
+    "static/js/787.af287bc4.chunk.js": "/NienNienKo-nepal-EBC/static/js/787.af287bc4.chunk.js",
+    "static/media/mainpage-video.mp4": "/NienNienKo-nepal-EBC/static/media/mainpage-video.640b73731e2ba935be22.mp4",
+    "static/media/background-mountain-2.png": "/NienNienKo-nepal-EBC/static/media/background-mountain-2.ac742fe7cbdf79c804f0.png",
+    "static/media/background-mountain.png": "/NienNienKo-nepal-EBC/static/media/background-mountain.88d9a7107803a962dc65.png",
+    "static/media/photo01.png": "/NienNienKo-nepal-EBC/static/media/photo01.6b0808af55ede475646d.png",
+    "static/media/github.svg": "/NienNienKo-nepal-EBC/static/media/github.97bf1d0172b534a3635931725a3f0fed.svg",
+    "static/media/email.svg": "/NienNienKo-nepal-EBC/static/media/email.fa6443358105b72d518ba890f1b6df68.svg",
+    "static/media/Logo.svg": "/NienNienKo-nepal-EBC/static/media/Logo.ab1534378fd9220ba36637a96f56cc89.svg",
+    "static/media/youtube.svg": "/NienNienKo-nepal-EBC/static/media/youtube.a3f2c223cf3f81db0b3979b87c7c830d.svg",
+    "static/media/youtube-2.svg": "/NienNienKo-nepal-EBC/static/media/youtube-2.56a59162ddefa78bf8318ffe2c25a451.svg",
+    "index.html": "/NienNienKo-nepal-EBC/index.html",
+    "main.6011ea0a.css.map": "/NienNienKo-nepal-EBC/static/css/main.6011ea0a.css.map",
+    "main.0eda1598.js.map": "/NienNienKo-nepal-EBC/static/js/main.0eda1598.js.map",
+    "787.af287bc4.chunk.js.map": "/NienNienKo-nepal-EBC/static/js/787.af287bc4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6011ea0a.css",
+    "static/js/main.0eda1598.js"
+  ]
+}
