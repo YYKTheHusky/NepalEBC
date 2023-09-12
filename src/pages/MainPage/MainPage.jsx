@@ -5,6 +5,9 @@ import styles from 'pages/MainPage/MainPage.module.scss'
 // video
 import mainVideo from 'assets/video/mainpage-video.mp4'
 
+// data
+import blogData from 'data/blog/blog.json'
+
 // components
 import MainLayout from 'components/Layout/MainLayout'
 import SectionTitle from 'components/SectionTitle/SectionTitle'
@@ -33,7 +36,7 @@ export default function MainPage() {
       </section>
       <div className={styles.contentContainer}>
         <section className={styles.introduction}>
-          <p>
+          <p data-aos="zoom-in-up">
             &emsp;&emsp;2022年底，我獨自前往尼泊爾EBC，展開為期11天的徒步之旅。途中生了一場大病，發燒了6天，接近吃光了所有攜帶的藥物，最後走到Gorrak
             Shep，看到了人生第一個冰河。回頭檢視這整趟旅程，發現當地旅行社的醫療知識及設備的不足，想將這次的經驗寫成文章，希望未來準備前往朝聖的旅人們，可以擁有更充足的資訊及準備。
           </p>
@@ -41,9 +44,9 @@ export default function MainPage() {
         <section className={styles.latestUpdate}>
           <SectionTitle text="最新文章" />
           <div className={styles.item}>
-            <BlogCard></BlogCard>
-            <BlogCard></BlogCard>
-            <BlogCard></BlogCard>
+            {blogData.blog.map((item) => (
+              <BlogCard key={item.id} data={item} />
+            ))}
           </div>
         </section>
         <section className={styles.youtube}>
@@ -54,12 +57,15 @@ export default function MainPage() {
               height="280"
               src="https://www.youtube.com/embed/f8SdIjPcVao?si=LxrDklJtK3TQ8ZA8"
               allowFullScreen
+              data-aos="flip-left"
             />
             <iframe
               width="500"
               height="280"
               src="https://www.youtube.com/embed/EoJPNiRBKsk?si=UOAnCMRMSy9RIHN9"
               allowFullScreen
+              data-aos="flip-left"
+              data-aos-delay="300"
             />
           </div>
         </section>

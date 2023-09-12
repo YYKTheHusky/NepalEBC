@@ -19,7 +19,13 @@ export default function VideoPage() {
   ]
 
   const iframeElements = videosSrc.map((src, index) => (
-    <iframe key={index} src={src} allowFullScreen />
+    <iframe
+      key={index}
+      src={src}
+      allowFullScreen
+      data-aos="zoom-in-right"
+      data-aos-delay={index * 300}
+    />
   ))
 
   return (

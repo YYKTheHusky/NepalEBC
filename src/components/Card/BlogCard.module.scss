@@ -1,8 +1,8 @@
 .cardContainer {
   width: 320px;
-  height: 420px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  margin: 10px;
+  height: 450px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.15);
+  margin: 20px 10px;
   cursor: pointer;
   transition: all 0.3s linear 0s;
 }
@@ -38,6 +38,7 @@
 .title {
   font-size: 24px;
   margin-bottom: 8px;
+  height: 56px;
 }
 
 .time {
@@ -46,7 +47,10 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
   height: 85px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }

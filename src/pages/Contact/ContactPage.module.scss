@@ -6,6 +6,7 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    animation: fadeIn 2s ease forwards;
   }
 }
 
@@ -26,8 +27,10 @@
     margin: 20px 0;
     white-space: nowrap;
     overflow: hidden;
+    opacity: 0;
     animation:
-      typing 1.3s steps(9, end),
+      fadeIn 0s ease 1s forwards,
+      typing 1.3s steps(9, end) 1s,
       blink-caret 0.5s step-end infinite alternate;
   }
   .item {
@@ -35,7 +38,7 @@
     padding: 8px 0;
     align-items: center;
     opacity: 0;
-    animation: fadeIn 1.5s ease 1.5s forwards;
+    animation: fadeIn 1.5s ease 2.5s forwards;
     .email {
       width: 32px;
       height: 32px;
@@ -50,13 +53,17 @@
       height: 40px;
       margin-right: 6px;
       &:hover {
-        animation: shake 0.8s ease infinite;
+        animation: shake 1s ease infinite;
       }
     }
     a {
       text-decoration: none;
       color: var(--dark-90);
       user-select: text;
+      transition: color 0.3s ease;
+      &:hover {
+        color: var(--main-color);
+      }
     }
   }
 }

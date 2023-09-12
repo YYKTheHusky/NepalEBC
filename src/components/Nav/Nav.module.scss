@@ -43,8 +43,22 @@ nav {
 .itemContainer {
   display: flex;
   .item {
-    padding: 10px 15px;
+    padding: 15px;
     cursor: pointer;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 4px;
+      content: ' ';
+      display: block;
+      width: 0%;
+      height: 3px;
+      background-color: var(--main-color);
+      transition: 0.4s 0.2s;
+    }
+    &:hover::after {
+      width: calc(100% - 30px);
+    }
   }
 }
 
