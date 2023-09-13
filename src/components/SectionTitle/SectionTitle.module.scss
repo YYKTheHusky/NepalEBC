@@ -1,7 +1,15 @@
-.title{
+.title {
   display: inline-block;
   font-size: 32px;
   padding: 12px;
   border-bottom: 4px solid var(--main-color);
   margin-bottom: 12px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+  }
 }

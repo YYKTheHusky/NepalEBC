@@ -5,10 +5,12 @@ import styles from 'components/Nav/Nav.module.scss'
 
 // svg
 import Logo from 'assets/icons/Logo.svg'
+import Burger from 'assets/icons/burger.svg'
 
 export default function Nav({ dark }) {
   const navigate = useNavigate()
   const [scrolling, setScrolling] = useState(false)
+  const [openMobileNav, setOpenMobileNav] = useState(false)
 
   // nav項目
   const navItems = [
@@ -30,6 +32,31 @@ export default function Nav({ dark }) {
 
     window.addEventListener('scroll', handleScroll)
     return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  // 開啟或關閉mobile nav ul
+  const handleOpenMobileNav = () => {
+    setOpenMobileNav(!openMobileNav)
+  }
+
+  // 當頁面大於768px或使用者滾動頁面，關閉mobile nav ul
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 768) {
+        setOpenMobileNav(false)
+      }
+    }
+    function handleScroll() {
+      setOpenMobileNav(false)
+    }
+
+    window.addEventListener('resize', handleResize)
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
@@ -56,6 +83,27 @@ export default function Nav({ dark }) {
             </div>
           ))}
         </div>
+        {/* mobile navbar */}
+        <div className={styles.navBurger}>
+          <img src={Burger} onClick={handleOpenMobileNav} />
+        </div>
+        <ul
+          className={
+            openMobileNav
+              ? styles.mobileItemContainerOpen
+              : styles.mobileItemContainer
+          }
+        >
+          {navItems.map((item, index) => (
+            <li
+              key={index}
+              className={styles.mobileItem}
+              onClick={() => navigate(item.path)}
+            >
+              {item.text}
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   )

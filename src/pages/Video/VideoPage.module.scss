@@ -42,3 +42,11 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1179px) {
+  .container {
+    .videoContainer {
+      justify-content: center;
+    }
+  }
+}

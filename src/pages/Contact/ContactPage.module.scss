@@ -59,8 +59,9 @@
     a {
       text-decoration: none;
       color: var(--dark-90);
-      user-select: text;
       transition: color 0.3s ease;
+      overflow-wrap: break-word;
+      width: 75vw;
       &:hover {
         color: var(--main-color);
       }
@@ -103,5 +104,21 @@
   }
   100% {
     transform: translateX(3px);
+  }
+}
+
+@media (max-width: 1050px) {
+  .innerContainer {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .infoContainer {
+    top: 150px;
+    .innerContainer {
+      width: 900px;
+      padding: 0 10px;
+    }
   }
 }

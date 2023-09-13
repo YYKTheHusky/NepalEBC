@@ -41,3 +41,18 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 576px) {
+  .photoContainer {
+    .textContainer {
+      padding: 30px 15px;
+    }
+    h3 {
+      font-size: 18px;
+      padding: 4px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

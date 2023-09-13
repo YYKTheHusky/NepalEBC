@@ -53,15 +53,11 @@ export default function MainPage() {
           <SectionTitle text="相關影片" />
           <div className={styles.item}>
             <iframe
-              width="500"
-              height="280"
               src="https://www.youtube.com/embed/f8SdIjPcVao?si=LxrDklJtK3TQ8ZA8"
               allowFullScreen
               data-aos="flip-left"
             />
             <iframe
-              width="500"
-              height="280"
               src="https://www.youtube.com/embed/EoJPNiRBKsk?si=UOAnCMRMSy9RIHN9"
               allowFullScreen
               data-aos="flip-left"
