@@ -16,6 +16,7 @@ import MainPhotoGallery from 'components/PhotoGallery/MainPhotoGallery'
 
 export default function MainPage() {
   const videoRef = useRef(null)
+  const latestArticle = blogData.blog.slice(0, 3)
 
   useEffect(() => {
     if (videoRef.current) {
@@ -44,7 +45,7 @@ export default function MainPage() {
         <section className={styles.latestUpdate}>
           <SectionTitle text="最新文章" />
           <div className={styles.item}>
-            {blogData.blog.map((item) => (
+            {latestArticle.map((item) => (
               <BlogCard key={item.id} data={item} />
             ))}
           </div>
