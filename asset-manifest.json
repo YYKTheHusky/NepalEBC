@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NepalEBC/static/css/main.ad440776.css",
-    "main.js": "/NepalEBC/static/js/main.226f180c.js",
+    "main.js": "/NepalEBC/static/js/main.058b0189.js",
     "static/js/787.af287bc4.chunk.js": "/NepalEBC/static/js/787.af287bc4.chunk.js",
     "static/media/mainpage-video.mp4": "/NepalEBC/static/media/mainpage-video.640b73731e2ba935be22.mp4",
     "static/media/background-mountain-2.png": "/NepalEBC/static/media/background-mountain-2.ac742fe7cbdf79c804f0.png",
@@ -15,11 +15,11 @@
     "static/media/youtube-2.svg": "/NepalEBC/static/media/youtube-2.56a59162ddefa78bf8318ffe2c25a451.svg",
     "index.html": "/NepalEBC/index.html",
     "main.ad440776.css.map": "/NepalEBC/static/css/main.ad440776.css.map",
-    "main.226f180c.js.map": "/NepalEBC/static/js/main.226f180c.js.map",
+    "main.058b0189.js.map": "/NepalEBC/static/js/main.058b0189.js.map",
     "787.af287bc4.chunk.js.map": "/NepalEBC/static/js/787.af287bc4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad440776.css",
-    "static/js/main.226f180c.js"
+    "static/js/main.058b0189.js"
   ]
 }
