@@ -17,7 +17,11 @@ export default function Footer() {
         >
           <img src={YoutubeLogo} alt="YoutubeLogo" />
         </a>
-        <a href="https://github.com/magic9701" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/YYKTheHusky"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={GithubLogo} alt="GithubLogo" />
         </a>
       </div>
